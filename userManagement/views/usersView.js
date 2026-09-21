@@ -49,7 +49,7 @@ function getFilteredUsers() {
     if (
       user.email.toLowerCase().includes(searchQuery) ||
       user.name.toLowerCase().includes(searchQuery) ||
-      user.id === searchQuery
+      user.id === Number(searchQuery)
     ) {
       filteredUsers.push(user);
     }

@@ -18,13 +18,7 @@ function searchView() {
                 : ""
             }
         </div>
-
-        <button class="search-btn" onclick="search()">Search</button>       
+        <button class="search-btn" onclick="search()">Search</button>      
     </div>  
     `;
-}
-
-function clearSearch() {
-  model.viewState.search.query = "";
-  updateView();
 }

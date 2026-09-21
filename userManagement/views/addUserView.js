@@ -11,7 +11,6 @@ function addUserView() {
                         placeholder="Enter name"
                         value="${model.viewState.addUser.name}"
                         oninput="model.viewState.addUser.name = this.value"
-                        required
                     >
                 </div>
                 <div class="input-group">
@@ -22,7 +21,6 @@ function addUserView() {
                         placeholder="Enter email"
                         value="${model.viewState.addUser.email}"
                         oninput="model.viewState.addUser.email = this.value"
-                        required
                 >
                 </div>
                 <button type="submit" class="add-user-btn" onclick="addUser()">Add user</button>
