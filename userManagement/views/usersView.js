@@ -15,19 +15,19 @@ function usersView() {
                     </tr>
                 </thead>
                 <tbody>
-                    ${createUserRowsHtml()}
+                    ${createUserRows()}
                 </tbody>
             </table>
         </div>
     `;
 }
 
-function createUserRowsHtml() {
-  let userListHtml = "";
+function createUserRows() {
+  let html = "";
   const hasSearchQuery = model.app.searchQuery != "";
   const users = hasSearchQuery ? getFilteredUsers() : model.users;
   for (const user of users) {
-    userListHtml += /*HTML*/ `
+    html += /*HTML*/ `
             <tr>
                 <td>${user.id}</td>
                 <td>${user.name}</td>
@@ -39,7 +39,7 @@ function createUserRowsHtml() {
         `;
   }
 
-  return userListHtml;
+  return html;
 }
 
 function getFilteredUsers() {

@@ -1,7 +1,6 @@
 function updateView() {
-  let page = model.app.page;
   let currentPageView = "";
-  switch (page) {
+  switch (model.app.page) {
     case "users":
       currentPageView = usersView();
       break;
