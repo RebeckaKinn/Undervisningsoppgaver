@@ -4,17 +4,19 @@ const model = {
   app: document.getElementById("app"),
   viewState: {},
   data: {
-    list: [],
+    list: [], // NEW ------------------------------------------
   },
 };
 
 // LocalStorage
 
 function saveList() {
+  // NEW ------------------------------------------
   localStorage.setItem("todoList", JSON.stringify(model.data.list));
 }
 
 function loadList() {
+  // NEW ------------------------------------------
   const savedList = localStorage.getItem("todoList");
 
   if (savedList) {
