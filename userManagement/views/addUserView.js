@@ -1,5 +1,5 @@
 function addUserView() {
-    return /*HTML*/`
+  return /*HTML*/ `
         <div class="add-user-form">
             <h2>Add new user</h2>
             <form id="userForm">
@@ -9,8 +9,8 @@ function addUserView() {
                         id="userName"
                         type="text"
                         placeholder="Enter name"
-                        value="${model.inputs.addUser.name}"
-                        oninput="model.inputs.addUser.name = this.value"
+                        value="${model.viewState.addUser.name}"
+                        oninput="model.viewState.addUser.name = this.value"
                         required
                     >
                 </div>
@@ -20,8 +20,8 @@ function addUserView() {
                         type="email"
                         id="userEmail"
                         placeholder="Enter email"
-                        value="${model.inputs.addUser.email}"
-                        oninput="model.inputs.addUser.email = this.value"
+                        value="${model.viewState.addUser.email}"
+                        oninput="model.viewState.addUser.email = this.value"
                         required
                 >
                 </div>

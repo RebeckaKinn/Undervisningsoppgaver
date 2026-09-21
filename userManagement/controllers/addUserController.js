@@ -1,20 +1,20 @@
-function addUser() {    
-    const user = {};
-    
-    user.id = getNextUserId();
-    user.name = model.inputs.addUser.name;
-    user.email = model.inputs.addUser.email;
-    model.users.push(user);    
-    resetAndGoToUsers();
+function addUser() {
+  const user = {};
+
+  user.id = getNextUserId();
+  user.name = model.viewState.addUser.name;
+  user.email = model.viewState.addUser.email;
+  model.users.push(user);
+  resetAndGoToUsers();
 }
 
 function resetAndGoToUsers() {
-    model.inputs.addUser.name = '';
-    model.inputs.addUser.email = '';
-    model.app.page = 'users';
-    updateView();
+  model.viewState.addUser.name = "";
+  model.viewState.addUser.email = "";
+  model.app.page = "users";
+  updateView();
 }
 
 function cancelAddUser() {
-    resetAndGoToUsers();
+  resetAndGoToUsers();
 }

@@ -1,12 +1,12 @@
 function search() {
-    debugger;
-    model.app.searchQuery = model.inputs.search.query;
-    model.inputs.search.query = '';
-    model.app.page = 'users';    
-    updateView();
+  debugger;
+  model.app.searchQuery = model.viewState.search.query;
+  model.viewState.search.query = "";
+  model.app.page = "users";
+  updateView();
 }
 
 function clearSearch() {
-    model.app.searchQuery = '';
-    updateView();
+  model.app.searchQuery = "";
+  updateView();
 }
