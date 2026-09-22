@@ -5,14 +5,14 @@ function addUser() {
   user.name = model.viewState.addUser.name;
   user.email = model.viewState.addUser.email;
   model.users.push(user);
+  console.log(model.users);
   resetAndGoToUsers();
 }
 
 function resetAndGoToUsers() {
   model.viewState.addUser.name = "";
   model.viewState.addUser.email = "";
-  model.app.page = "users";
-  updateView();
+  setPage("users");
 }
 
 function cancelAddUser() {
