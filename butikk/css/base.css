@@ -19,3 +19,39 @@ textarea,
 select {
   font: inherit;
 }
+
+/*updated*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+ul,
+menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
