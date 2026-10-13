@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Café</title>
+    <link href="/../default.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="updateView()">
     <div id="app"></div>
-    <script src="model.js"></script>
+    <!-- start up -->
+    <script src="utilities/model.js"></script>
+    <script src="utilities/router.js"></script>
+    <!-- view components -->
+    <script src=""></script>
+    <!-- views -->
+    <script src="pages/adminStorageView.js"></script>
+    <!-- controllers -->
+    <script src="controller/adminStorageController.js"></script>
+    <!-- global controllers -->
+    <script src="utilities/common.js"></script>
   </body>
 </html>

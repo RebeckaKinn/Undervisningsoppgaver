@@ -1,6 +1,6 @@
 const model = {
   app: {
-    currentPage: "landingPage",
+    currentPage: "adminStorage",
     loggedInUserId: null,
   },
   viewState: {
@@ -9,18 +9,18 @@ const model = {
     },
     productPage: {
       extraID: [],
-      removedID: [],
-      amount: 1,
+      removed: [],
+      amount: null,
     },
     cakeDesignPage: {
       size: null,
       category: null,
-      cakeBun: null,
-      exstraFilling: [],
+      bakeBun: null,
+      extraFilling: [],
       creamType: null,
       creamFlavor: null,
       text: null,
-      comments: null,
+      comment: null,
     },
     orderPage: {
       dateTime: {
@@ -35,10 +35,13 @@ const model = {
       paymentMethod: null,
     },
     adminStorage: {
+      search: null,
       filter: {
         categoryID: null,
         content: null,
       },
+      newCategory: null,
+      newAllergy: null,
       addItem: {
         title: null,
         amount: null,
@@ -59,7 +62,7 @@ const model = {
     { name: "drikke", id: 4 },
     { name: "kaffe", id: 5 },
   ],
-  alergies: [
+  allergies: [
     { name: "nøtter", id: 1 },
     { name: "laktose", id: 2 },
     { name: "gluten", id: 3 },
@@ -72,7 +75,6 @@ const model = {
     { name: "majo", price: 5, id: 6 },
     { name: "bacon", price: 20, id: 7 },
   ],
-
   cakeDesign: {
     size: [
       { name: "20cm", id: 1 },
@@ -113,11 +115,11 @@ const model = {
       id: 1,
       category: 1,
       title: "Baguett med ost og skinke",
+      price: 100,
+      amount: 10,
       image:
         "https://www.gunnarruud.no/wp-content/uploads/2018/03/baguette-ost-og-skinke.jpg",
-      amount: 10,
-      price: 100,
-      alergies: [2, 3],
+      allergies: [1, 2, 3],
       content: ["ost", "skinke", "smør", "salat"],
       updated: "12.10.2026",
     },
@@ -126,16 +128,16 @@ const model = {
     {
       id: 1,
       orderCode: "NK425",
-      customer: {
-        firstName: "Kari",
-        lastName: "Nordmann",
-        phoneNumber: 1554515415,
-      },
       dateTime: {
         date: "13.10.2026",
         time: "09.30",
       },
-      paymentMethod: "betal i butikk",
+      customer: {
+        firstName: "Kari",
+        lastName: "Nordmann",
+        phoneNumber: 1284865455,
+      },
+      paymentMethod: "Betale i butikk",
       products: [
         { productID: 1, extraID: [1], removed: ["skinke"], amount: 1 },
         { productID: 1, extraID: [1], removed: ["skinke"], amount: 1 },
