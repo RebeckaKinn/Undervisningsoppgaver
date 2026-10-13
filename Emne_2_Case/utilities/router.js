@@ -7,6 +7,7 @@ function updateView() {
   }
 
   document.getElementById("app").innerHTML = /*HTML*/ `
+        <header class="gap-1rem">${adminHeader()}</header>
         <main>
             ${currentPageView}
         </main>
