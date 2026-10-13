@@ -123,6 +123,66 @@ const model = {
       content: ["ost", "skinke", "smør", "salat"],
       updated: "12.10.2026",
     },
+    {
+      id: 2,
+      category: 1,
+      title: "Baguett med kylling og bacon",
+      price: 125,
+      amount: 15,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhQ5ZVWL0v_ksANKBv27tzLPCtj4rQEwaABYbHZmZaw&s=10",
+      allergies: [2, 3],
+      content: ["kylling", "bacon", "salat", "tomat", "majo"],
+      updated: "13.10.2026",
+    },
+    {
+      id: 3,
+      category: 2,
+      title: "Snitter med reker",
+      price: 85,
+      amount: 20,
+      image:
+        "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600",
+      allergies: [2, 3],
+      content: ["reker", "loff", "majo", "salat", "sitron"],
+      updated: "13.10.2026",
+    },
+    {
+      id: 4,
+      category: 3,
+      title: "Sjokoladekake",
+      price: 75,
+      amount: 12,
+      image:
+        "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600",
+      allergies: [2, 3],
+      content: ["sjokolade", "mel", "egg", "smør", "sukker"],
+      updated: "13.10.2026",
+    },
+    {
+      id: 5,
+      category: 4,
+      title: "Ferskpresset appelsinjuice",
+      price: 49,
+      amount: 25,
+      image:
+        "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=600",
+      allergies: [],
+      content: ["appelsin"],
+      updated: "13.10.2026",
+    },
+    {
+      id: 6,
+      category: 5,
+      title: "Cappuccino",
+      price: 55,
+      amount: 30,
+      image:
+        "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600",
+      allergies: [2],
+      content: ["espresso", "melk", "melkeskum"],
+      updated: "13.10.2026",
+    },
   ],
   orders: [
     {
