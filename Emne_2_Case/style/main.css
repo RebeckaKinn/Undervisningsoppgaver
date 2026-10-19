@@ -1,0 +1,53 @@
+body {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  max-height: 100px;
+  max-width: 1500px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header button {
+  max-height: 35px;
+}
+.adminButton {
+  min-width: 150px;
+}
+button.defaultButton {
+  background-color: var(--muted);
+  color: var(--bg);
+}
+.flex {
+  display: flex;
+}
+.gap-1rem {
+  gap: 1rem;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.headerText {
+  text-align: right;
+  h3 {
+    margin: 0;
+  }
+}
+
+.previewImage {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
