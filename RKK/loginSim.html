@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Sim</title>
+    <link href="/../default.css" rel="stylesheet" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .loginCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      input,
+      button {
+        width: 100%;
+      }
+
+      .loginMessage {
+        display: block;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loginCard">
+      <h1>Log inn</h1>
+      <input type="text" placeholder="username" id="usernameInput" />
+      <button id="loginButton" onclick="logIn()">Log inn</button>
+    </div>
+
+    <div id="loginMessage" class="loginMessage hidden">
+      <h2>Velkommen <span id="username"></span></h2>
+      <button onclick="logOut()">Log ut</button>
+    </div>
+
+    <script>
+      function logIn() {
+        document.getElementById("username").innerHTML =
+          document.getElementById("usernameInput").value;
+        document.getElementById("loginMessage").classList.remove("hidden");
+      }
+
+      function logOut() {
+        document.getElementById("loginMessage").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
